@@ -1,0 +1,13 @@
+[font]
+size = 20.0
+
+[font.normal]
+family = "CommitMono Nerd Font Mono"
+
+# [terminal.shell]
+# program               = "/usr/bin/zsh"
+# args                  = [ "--login", ]
+
+[window]
+opacity = 0.9
+blur = false
