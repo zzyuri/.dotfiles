@@ -55,6 +55,9 @@ vim.keymap.set('n', '<leader>e', ':e .<CR>')
 vim.keymap.set('n', 'd1k', 'd1j')
 vim.keymap.set('n', 'd1l', 'd1k')
 
+vim.keymap.set('n', 'dk', 'dj')
+vim.keymap.set('n', 'dl', 'dk')
+
 vim.keymap.set('n', 'd2k', 'd2j')
 vim.keymap.set('n', 'd2l', 'd2k')
 
