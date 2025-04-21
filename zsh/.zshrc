@@ -120,7 +120,7 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # bindkey -s ^f "bash tmux-sessionizer\n"
-# bindkey -s ^i "bash tmux-cht.sh\n"
+bindkey -s ^y "bash tmux-cht.sh\n"
 
 export PATH="~/.local/scripts:$PATH"
 
