@@ -25,12 +25,14 @@ vim.keymap.set('n', 'j', 'h')
 vim.keymap.set('n', 'k', 'j')
 vim.keymap.set('n', 'l', 'k')
 vim.keymap.set('n', ';', 'l')
+vim.keymap.set('n', 'ç', 'l')
 
 -- Visual mode keys
 vim.keymap.set('v', 'j', 'h')
 vim.keymap.set('v', 'k', 'j')
 vim.keymap.set('v', 'l', 'k')
 vim.keymap.set('v', ';', 'l')
+vim.keymap.set('v', 'ç', 'l')
 
 -- Move between panes
 -- vim.keymap.set('n', 'J', '<c-w>h')
