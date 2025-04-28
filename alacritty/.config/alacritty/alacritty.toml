@@ -9,5 +9,10 @@ family = "CommitMono Nerd Font Mono"
 # args                  = [ "--login", ]
 
 [window]
-opacity = 0.8
+opacity = 1 
 blur = false
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/campbell.toml"
+]
