@@ -16,3 +16,7 @@ blur = false
 import = [
     "~/.config/alacritty/themes/themes/campbell.toml"
 ]
+
+[keyboard]
+
+bindings = [ { key = "F11", mods = "None", action = "ToggleFullscreen" }, ]
