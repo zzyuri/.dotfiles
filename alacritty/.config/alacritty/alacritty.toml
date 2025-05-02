@@ -2,21 +2,20 @@
 size = 20.0
 
 [font.normal]
-family = "CommitMono Nerd Font Mono"
+family = "Hack Nerd Font Mono"
 
 # [terminal.shell]
 # program               = "/usr/bin/zsh"
 # args                  = [ "--login", ]
 
 [window]
-opacity = 1 
+opacity = 0.8 
 blur = false
 
 [general]
-import = [
-    "~/.config/alacritty/themes/themes/campbell.toml"
-]
+# import = [
+#     "~/.config/alacritty/themes/themes/xterm.toml"
+# ]
 
 [keyboard]
-
 bindings = [ { key = "F11", mods = "None", action = "ToggleFullscreen" }, ]

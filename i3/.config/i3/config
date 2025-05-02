@@ -110,6 +110,9 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# bindsym $mod+e exec xfe 
+# exec --no-startup-id picom -b --backend glx
+
 # focus the child container
 #bindsym $mod+d focus child
 
@@ -155,8 +158,9 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+bindsym $mod+Shift+e exec xfe
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -196,6 +200,8 @@ bar {
         bindsym button5 nop
 }
 
+focus_follows_mouse no
+
 #remove title bar
 # for_window [class="^.*"] border pixel 0
 default_border pixel 1
@@ -204,5 +210,5 @@ default_floating_border pixel 1
 exec --no-startup-id setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,br
 
 exec --no-startup-id picom -b --backend glx
-exec --no-startup-id feh --bg-fill /home/laocsap/Downloads/dogs.jpg
+exec --no-startup-id feh --bg-fill /home/laocsap/Downloads/wallpaperflare.jpg
 
