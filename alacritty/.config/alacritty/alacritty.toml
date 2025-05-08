@@ -1,21 +1,22 @@
 [font]
-size = 20.0
+size = 15.0
 
 [font.normal]
 family = "Hack Nerd Font Mono"
 
-# [terminal.shell]
-# program               = "/usr/bin/zsh"
-# args                  = [ "--login", ]
+[terminal.shell]
+program               = "/usr/bin/zsh"
+args                  = [ "--login", ]
 
 [window]
-opacity = 0.8 
+# opacity = 0 
 blur = false
 
 [general]
-# import = [
-#     "~/.config/alacritty/themes/themes/xterm.toml"
-# ]
+import = [
+    "~/.config/alacritty/themes/themes/gruvbox_material_hard_light.toml"
+    # "~/.config/alacritty/themes/themes/selenized_light.toml"
+]
 
 [keyboard]
 bindings = [ { key = "F11", mods = "None", action = "ToggleFullscreen" }, ]
