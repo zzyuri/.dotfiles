@@ -56,8 +56,14 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
+
 # bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec --no-startup-id rofi -show run
+# bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec "rofi -modi drun,run -show drun"
+# bindsym $mod+d exec --no-startup-id "rofi -show drun -run-command 'gksudo {cmd}'"
+
+# bindsym $mod+d exec --no-startup-id rofi -show drun -run-command 'gksudo {cmd}'
+
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -212,6 +218,7 @@ default_floating_border pixel 1
 exec --no-startup-id setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,br
 
 exec --no-startup-id picom -b --backend glx
-# exec --no-startup-id feh --bg-fill /home/laocsap/Downloads/wallpaperflare.jpg
-exec --no-startup-id feh --bg-color black "$@"
+exec --no-startup-id redshift -P -O 3500
+exec --no-startup-id feh --bg-fill /home/laocsap/Downloads/vilauchiha.png
+# exec --no-startup-id feh --bg-color black "$@"
 

@@ -18,7 +18,7 @@ vim.opt.shiftwidth = 4
 vim.opt.shiftround = true
 vim.opt.expandtab = true
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.keymap.set('n', 'hi', ':nohlsearch<CR>')
 
 -- Normal mode keys
 vim.keymap.set('n', 'j', 'h')
@@ -50,7 +50,7 @@ vim.keymap.set('i', 'kj', '<Esc>')
 vim.keymap.set('i', 'k;', '<Esc>$')
 
 -- enter netrw
-vim.keymap.set('n', '<leader>e', ':e .<CR>')
+vim.keymap.set('n', '<leader>e', ':Ex <CR>')
 
 -- crazy remap just for fit in my jkl; binding
 
