@@ -34,9 +34,9 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-require("mason").setup()
-require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls" }
+vim.diagnostic.config({
+  virtual_text = true,
 })
-require("lspconfig").lua_ls.setup {}
+
+vim.cmd("colorscheme catppuccin-frappe")
 

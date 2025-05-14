@@ -132,3 +132,6 @@ export PATH="~/.local/scripts:$PATH"
 alias vim='nvim'
 
 source /usr/share/nvm/init-nvm.sh
+
+bindkey '^b' up-line-or-search
+bindkey '^n' down-line-or-search

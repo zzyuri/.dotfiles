@@ -7,7 +7,7 @@ vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.autoread = true
-vim.wo.number = true 
+vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.guicursor = 'n-v-c-sm-i-ci-ve:block,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor'
 
@@ -40,19 +40,23 @@ vim.keymap.set('v', 'ç', 'l')
 -- vim.keymap.set('n', 'L', '<c-w>k')
 -- vim.keymap.set('n', 'Ç', '<c-w>l')
 
-vim.keymap.set('n', 'H', '<c-w>h')
-vim.keymap.set('n', 'J', '<c-w>j')
-vim.keymap.set('n', 'K', '<c-w>k')
-vim.keymap.set('n', 'L', '<c-w>l')
+vim.keymap.set('n', '<c-w>j', '<c-w>h')
+vim.keymap.set('n', '<c-w>k', '<c-w>j')
+vim.keymap.set('n', '<c-w>l', '<c-w>k')
+vim.keymap.set('n', '<c-w>;', '<c-w>l')
+
+-- vim.keymap.set("n", "J", ":m '>+1<CR>gv=gv");
+-- vim.keymap.set("n", "K", ":m '<-2<CR>gv=gv");
 
 -- Custom Escape Keys
 vim.keymap.set('i', 'kj', '<Esc>')
-vim.keymap.set('i', 'k;', '<Esc>$')
+vim.keymap.set('i', 'k;', '<Esc>la')
+-- Primeagen J and K
 
 -- enter netrw
 vim.keymap.set('n', '<leader>e', ':Ex <CR>')
 
--- crazy remap just for fit in my jkl; binding
+-- crazy remap just for fit in my jkl; binding I rice btw
 
 vim.keymap.set('n', 'd1k', 'd1j')
 vim.keymap.set('n', 'd1l', 'd1k')
