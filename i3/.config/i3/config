@@ -55,6 +55,9 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# start flameshot (screenshot manager)
+bindsym Print exec "flameshot gui"
+
 # start dmenu (a program launcher)
 
 # bindsym $mod+d exec --no-startup-id dmenu_run
@@ -218,6 +221,7 @@ default_floating_border pixel 1
 exec --no-startup-id setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,br
 
 exec --no-startup-id picom -b --backend glx
+exec --no-startup-id flameshot
 exec --no-startup-id redshift -P -O 3500
 exec --no-startup-id feh --bg-fill /home/laocsap/Downloads/vilauchiha.png
 # exec --no-startup-id feh --bg-color black "$@"

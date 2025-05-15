@@ -39,4 +39,5 @@ vim.diagnostic.config({
 })
 
 vim.cmd("colorscheme catppuccin-frappe")
+-- vim.cmd("colorscheme kanagawa-lotus")
 

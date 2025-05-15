@@ -34,6 +34,12 @@ vim.keymap.set('v', 'l', 'k')
 vim.keymap.set('v', ';', 'l')
 vim.keymap.set('v', 'ç', 'l')
 
+-- Operator-pending mode keys 
+vim.keymap.set('o', 'j', 'h')
+vim.keymap.set('o', 'k', 'j')
+vim.keymap.set('o', 'l', 'k')
+vim.keymap.set('o', ';', 'l')
+
 -- Move between panes
 -- vim.keymap.set('n', 'J', '<c-w>h')
 -- vim.keymap.set('n', 'K', '<c-w>j')
@@ -56,34 +62,3 @@ vim.keymap.set('i', 'k;', '<Esc>la')
 -- enter netrw
 vim.keymap.set('n', '<leader>e', ':Ex <CR>')
 
--- crazy remap just for fit in my jkl; binding I rice btw
-
-vim.keymap.set('n', 'd1k', 'd1j')
-vim.keymap.set('n', 'd1l', 'd1k')
-
-vim.keymap.set('n', 'dk', 'dj')
-vim.keymap.set('n', 'dl', 'dk')
-
-vim.keymap.set('n', 'd2k', 'd2j')
-vim.keymap.set('n', 'd2l', 'd2k')
-
-vim.keymap.set('n', 'd3k', 'd3j')
-vim.keymap.set('n', 'd3l', 'd3k')
-
-vim.keymap.set('n', 'd4k', 'd4j')
-vim.keymap.set('n', 'd4l', 'd4k')
-
-vim.keymap.set('n', 'd5k', 'd5j')
-vim.keymap.set('n', 'd5l', 'd5k')
-
-vim.keymap.set('n', 'd6k', 'd6j')
-vim.keymap.set('n', 'd6l', 'd6k')
-
-vim.keymap.set('n', 'd7k', 'd7j')
-vim.keymap.set('n', 'd7l', 'd7k')
-
-vim.keymap.set('n', 'd8k', 'd8j')
-vim.keymap.set('n', 'd8l', 'd8k')
-
-vim.keymap.set('n', 'd9k', 'd9j')
-vim.keymap.set('n', 'd9l', 'd9k')
