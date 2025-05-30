@@ -5,11 +5,11 @@ return
     opts = function()
         local builtin = require("telescope.builtin");
         require("telescope").setup({
-            vim.keymap.set("n", "<Space>fg", builtin.find_files, {}),
-            vim.keymap.set("n", "<Space>ff", builtin.find_files, {}),
-            vim.keymap.set("n", "<Space><Space>", builtin.oldfiles, {}),
-            vim.keymap.set("n", "<Space>lg", builtin.live_grep, {}),
-            vim.keymap.set("n", "<Space>ht", builtin.help_tags, {}),
+            vim.keymap.set("n", "<leader>fg", builtin.find_files, {}),
+            vim.keymap.set("n", "<leader>ff", builtin.find_files, {}),
+            -- vim.keymap.set("n", "<leader><leader>", builtin.oldfiles, {}),
+            vim.keymap.set("n", "<leader>lg", builtin.live_grep, {}),
+            vim.keymap.set("n", "<leader>ht", builtin.help_tags, {}),
             vim.keymap.set("n", "<leader>ps", function() builtin.grep_string({ search = vim.fn.input("Grep > ") }) end),
 
             extensions = {

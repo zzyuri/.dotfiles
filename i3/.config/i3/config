@@ -213,16 +213,35 @@ bar {
 
 focus_follows_mouse no
 
+# exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/brave; workspace 1'
+# exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/alacritty; workspace 1'
+# exec --no-startup-id i3-msg 'workspace 10; exec /usr/bin/spotify-launcher; workspace 10'
+
+exec --no-startup-id i3-msg "workspace 3; exec /usr/bin/alacritty"
+exec --no-startup-id i3-msg "workspace 2; exec /usr/bin/firefox"
+# exec --no-startup-id i3-msg "sh -c 'sleep 1'; workspace 10; exec /usr/bin/spotify-launcher"
+
 #remove title bar
 # for_window [class="^.*"] border pixel 0
-default_border pixel 1
-default_floating_border pixel 1
+default_border pixel 2
+default_floating_border pixel 2
 
-exec --no-startup-id setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,br
-
+# exec --no-startup-id setxkbmap -option caps:escape 
+# exec --no-startup-id setxkbmap -option caps:escape,grp:switch,grp:alt_shift_toggle,grp_led:scroll us,br
+exec --no-startup-id setxkbmap -option caps:escape,grp:switch,grp:alt_shift_toggle,grp_led:scroll custom_symbols,br
 exec --no-startup-id picom -b --backend glx
 exec --no-startup-id flameshot
 exec --no-startup-id redshift -P -O 3500
 exec --no-startup-id feh --bg-fill /home/laocsap/Downloads/vilauchiha.png
+
+bindsym $mod+Tab workspace next
+
+# bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +1%
+# bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 1%-
+
+
 # exec --no-startup-id feh --bg-color black "$@"
 
+# Assign an application to an workspace;
+
+# assign [instance="spotify-launcher"] $ws10

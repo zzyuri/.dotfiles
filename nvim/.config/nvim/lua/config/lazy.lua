@@ -38,6 +38,6 @@ vim.diagnostic.config({
   virtual_text = true,
 })
 
-vim.cmd("colorscheme catppuccin-frappe")
+vim.cmd("colorscheme rose-pine")
 -- vim.cmd("colorscheme kanagawa-lotus")
 
