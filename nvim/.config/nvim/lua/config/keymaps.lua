@@ -59,6 +59,7 @@ vim.keymap.set("v", "L", ":m '<-2<CR>gv=gv");
 -- vim.keymap.set('i', 'kj', '<Esc>')
 vim.keymap.set('i', 'jk', '<Esc>')
 -- vim.keymap.set('i', 'k;', '<Esc>la')
+vim.keymap.set('i', '<c-BS>', '<c-w>')
 
 -- enter netrw
 vim.keymap.set('n', '<leader>e', ':Ex <CR>')

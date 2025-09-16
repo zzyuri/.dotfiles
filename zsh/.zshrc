@@ -136,7 +136,8 @@ source /usr/share/nvm/init-nvm.sh
 # bindkey '^b' up-line-or-search
 # bindkey '^n' down-line-or-search
 
-bindkey '^b' history-beginning-search-backward
+bindkey '^p' history-beginning-search-backward
 bindkey '^n' history-beginning-search-backward
+bindkey '^H' backward-kill-word
 
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
