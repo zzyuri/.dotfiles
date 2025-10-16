@@ -1,3 +1,4 @@
+
 vim.g.maplocalleader = ' '
 vim.g.mapleader = ' '
 
@@ -10,6 +11,14 @@ vim.opt.autoread = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.guicursor = 'n-v-c-sm-i-ci-ve:block,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor'
+vim.opt.smartindent = true
+
+-- Python brackets indenting fix
+Set = vim.opt
+Let = vim.g
+Set.shiftwidth = 4
+
+Let.pyindent_open_paren = Set.shiftwidth
 
 -- use spaces for tab and whatnot
 vim.opt.tabstop = 4

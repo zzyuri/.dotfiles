@@ -91,11 +91,11 @@ return {
 
     { "rose-pine/neovim", name = "rose-pine", enabled = true },
 
-    {
-        "sphamba/smear-cursor.nvim",
-        opts = {},
-        enabled = true
-    },
+    -- {
+    --     "sphamba/smear-cursor.nvim",
+    --     opts = {},
+    --     enabled = true
+    -- },
 
     {
         "nvim-telescope/telescope.nvim",
