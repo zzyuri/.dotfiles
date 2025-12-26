@@ -218,7 +218,7 @@ focus_follows_mouse no
 # exec --no-startup-id i3-msg 'workspace 10; exec /usr/bin/spotify-launcher; workspace 10'
 
 exec --no-startup-id i3-msg "workspace 3; exec /usr/bin/alacritty"
-exec --no-startup-id i3-msg "workspace 2; exec /usr/bin/firefox"
+exec --no-startup-id i3-msg "workspace 1; exec /usr/bin/firefox"
 # exec --no-startup-id i3-msg "sh -c 'sleep 1'; workspace 10; exec /usr/bin/spotify-launcher"
 
 #remove title bar
@@ -228,11 +228,11 @@ default_floating_border pixel 2
 
 # exec --no-startup-id setxkbmap -option caps:escape 
 # exec --no-startup-id setxkbmap -option caps:escape,grp:switch,grp:alt_shift_toggle,grp_led:scroll us,br
-exec --no-startup-id setxkbmap -option caps:escape,grp:switch,grp:alt_shift_toggle,grp_led:scroll custom_symbols,br
-exec --no-startup-id picom -b --backend glx
+exec --no-startup-id setxkbmap -option caps:escape,grp:switch,grp:alt_shift_toggle,grp_led:scroll en, br
+# exec --no-startup-id picom -b --backend glx
 exec --no-startup-id flameshot
-exec --no-startup-id redshift -P -O 3500
-exec --no-startup-id feh --bg-fill /home/laocsap/Downloads/vilauchiha.png
+# exec --no-startup-id redshift -P -O 3500
+# exec --no-startup-id feh --bg-fill /home/laocsap/Downloads/vilauchiha.png
 
 bindsym $mod+Tab workspace next
 

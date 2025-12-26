@@ -7,6 +7,7 @@ family = "Hack Nerd Font Mono"
 
 [terminal.shell]
 program               = "/usr/bin/zsh"
+# program               = "/usr/bin/bash"
 args                  = [ "--login", ]
 
 [window]

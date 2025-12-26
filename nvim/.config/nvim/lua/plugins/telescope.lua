@@ -12,6 +12,16 @@ return
             vim.keymap.set("n", "<leader>ht", builtin.help_tags, {}),
             vim.keymap.set("n", "<leader>ps", function() builtin.grep_string({ search = vim.fn.input("Grep > ") }) end),
 
+            defaults = {
+                -- `hidden = true` is not supported in text grep commands.
+                vimgrep_arguments = vimgrep_arguments,
+            },
+            pickers = {
+                find_files = {
+                    -- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
+                    find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*", "-L" },
+                },
+            },
             extensions = {
                 fzf = {
                     fuzzy = true,                    -- false will only do exact matching
