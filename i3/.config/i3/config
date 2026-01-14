@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Hack Nerd Font Mono 8
+font pango:Hack Nerd Font Mono 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -55,7 +55,7 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start flameshot (screenshot manager)
+# start flameshot (screenshot tool)
 bindsym Print exec "flameshot gui"
 
 # start dmenu (a program launcher)
@@ -171,7 +171,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+Shift+e exec xfe
+bindsym $mod+Shift+e exec dolphin
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -226,9 +226,11 @@ exec --no-startup-id i3-msg "workspace 1; exec /usr/bin/firefox"
 default_border pixel 2
 default_floating_border pixel 2
 
-# exec --no-startup-id setxkbmap -option caps:escape 
+exec --no-startup-id setxkbmap -option caps:escape_shifted_capslock 
+# exec --no-startup-id setxkbmap -layout us -variant intl
+# exec --no-startup-id setxkbmap -layout us 
 # exec --no-startup-id setxkbmap -option caps:escape,grp:switch,grp:alt_shift_toggle,grp_led:scroll us,br
-exec --no-startup-id setxkbmap -option caps:escape,grp:switch,grp:alt_shift_toggle,grp_led:scroll en, br
+# exec --no-startup-id setxkbmap -option caps:escape,grp:switch,grp:alt_shift_toggle,grp_led:scroll en, br
 # exec --no-startup-id picom -b --backend glx
 exec --no-startup-id flameshot
 # exec --no-startup-id redshift -P -O 3500

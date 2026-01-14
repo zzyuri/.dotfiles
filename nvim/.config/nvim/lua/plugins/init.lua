@@ -118,7 +118,7 @@ return {
 
     "xiyaowong/transparent.nvim",
     -- "nvim-treesitter/nvim-treesitter",
-    { "nvim-treesitter/nvim-treesitter", tag = "v0.10.0", lazy = false, build = ":TSUpdate" },
+    -- { "nvim-treesitter/nvim-treesitter", tag = "v0.10.0", lazy = false, build = ":TSUpdate" },
     "folke/trouble.nvim",
     "ThePrimeagen/vim-be-good",
     "rebelot/kanagawa.nvim",

@@ -1,5 +1,8 @@
 return {
     "nvim-treesitter/nvim-treesitter",
+    tag = "v0.10.0",
+    lazy = false,
+    build = ":TSUpdate", 
     opts = {
         -- A list of parser names, or "all"
         ensure_installed = { "javascript", "typescript", "c", "lua", "rust" },

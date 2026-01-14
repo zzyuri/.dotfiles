@@ -18,4 +18,3 @@ tztime local {
         format = "%H:%M:%S %Y-%m-%d "
 }
 
-
