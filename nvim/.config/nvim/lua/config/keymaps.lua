@@ -12,6 +12,7 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.guicursor = 'n-v-c-sm-i-ci-ve:block,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor'
 vim.opt.smartindent = true
+vim.cmd([[let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro']])
 
 -- Python brackets indenting fix
 Set = vim.opt
@@ -60,7 +61,7 @@ vim.keymap.set('n', '<c-w>k', '<c-w>j')
 vim.keymap.set('n', '<c-w>l', '<c-w>k')
 vim.keymap.set('n', '<c-w>;', '<c-w>l')
 
--- ThePrimeagen J and K
+-- primeagen J and K
 vim.keymap.set("v", "K", ":m '>+1<CR>gv=gv");
 vim.keymap.set("v", "L", ":m '<-2<CR>gv=gv");
 
