@@ -1,11 +1,40 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     tag = "v0.10.0",
+    -- version = false,
     lazy = false,
     build = ":TSUpdate", 
+    config = function(_, opts)
+        -- 1. Register the Blade parser config BEFORE running the plugin setup
+        local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+        parser_config.blade = {
+            install_info = {
+                url = "https://github.com/EmranMR/tree-sitter-blade",
+                files = { "src/parser.c" },
+                branch = "main",
+            },
+            filetype = "blade",
+        }
+
+        -- 2. Run the actual treesitter setup with your existing opts
+        require("nvim-treesitter.configs").setup(opts)
+    end,
     opts = {
         -- A list of parser names, or "all"
-        ensure_installed = { "javascript", "typescript", "c", "lua", "rust" },
+        ensure_installed = { 
+            "javascript",
+            "typescript",
+            "c",
+            "lua",
+            "json",
+            "rust",
+            "php",
+            "php_only",
+            "html",
+            "css",
+            "bash",
+            "blade",
+        },
 
         -- Install parsers synchronously (only applied to `ensure_installed`)
         sync_install = false,
