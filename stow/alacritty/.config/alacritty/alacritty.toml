@@ -1,0 +1,69 @@
+[font]
+# size = 28.5
+size = 22.5
+
+[font.normal]
+# family = "Hack Nerd Font Mono"
+family = "CommitMono Nerd Font Mono"
+# family = "MesloLGL Nerd Font Mono"
+
+[terminal.shell]
+program               = "/usr/bin/zsh"
+# program               = "/usr/bin/bash"
+args                  = [ "--login", ]
+
+[window]
+opacity = 0.8 
+blur = false
+
+[colors.primary]
+background = "#000000"
+foreground = "#dddddd"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#dddddd"
+
+[colors.normal]
+black = "#000000"
+red = "#cc0403"
+green = "#19cb00"
+yellow = "#fae01b"
+blue = "#1e8dfc"
+magenta = "#cd00cd"
+cyan = "#00cbcc"
+white = "#dddddd"
+
+[colors.bright]
+black = "#767676"
+red = "#f2201f"
+green = "#23fd00"
+yellow = "#fffd00"
+blue = "#1e8dfc"
+magenta = "#ff00fe"
+cyan = "#00fffe"
+white = "#ffffff"
+
+
+[general]
+import = [
+    # "~/.config/alacritty/themes/themes/gruvbox_material_hard_light.toml"
+    # "~/.config/alacritty/themes/themes/gruvbox_material_hard_light.toml"
+]
+
+[keyboard]
+bindings = [ 
+    { key = "F11", mods = "None", action = "ToggleFullscreen" },
+    { key = "F1", mods = "None", command = { program = "alacritty", args = ["msg", "config", "font.size=14"] } },
+    { key = "F2", mods = "None", command = { program = "alacritty", args = ["msg", "config", "font.size=18"] } },
+    { key = "F3", mods = "None", command = { program = "alacritty", args = ["msg", "config", "font.size=22.5"] } },
+    # { key = "F4", mods = "None", command = { program = "alacritty", args = ["msg", "config", "font.size=23"] } },
+
+]
+
+
+
+
+
+
+
