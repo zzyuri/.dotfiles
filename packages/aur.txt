@@ -1,17 +1,7 @@
-activitywatch-bin
-activitywatch-bin-debug
 annotator
 ashell
-claude-code
-freetube
-logmein-hamachi
 lorien-bin
-minecraft-launcher
-python-selenium
-python-xyzservices
 spotify
 ventoy-bin
-wacomtablet
 yay
 yay-debug
-zotero-bin
