@@ -1,0 +1,97 @@
+# ===== Base / ferramentas de compilação =====
+
+base-devel
+git
+github-cli
+stow
+cmake
+vim
+neovim
+man-db
+tldr
+
+# ===== Terminal e shell =====
+alacritty
+zsh
+tmux
+fzf
+htop
+bc
+wget
+zip
+unzip
+unrar
+openbsd-netcat
+smartmontools
+zram-generator
+
+# ===== Rede e bluetooth =====
+iwd
+bluez
+bluez-utils
+network-manager-applet
+wireless_tools
+
+# ===== Áudio =====
+alsa-utils
+libpulse
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+wireplumber
+gst-plugin-pipewire
+pavucontrol
+
+# ===== Hyprland / desktop =====
+hyprland
+hyprlauncher
+hyprlock
+hyprpaper
+hyprshot
+xdg-desktop-portal-hyprland
+xdg-utils
+dms-shell
+dunst
+rofi
+brightnessctl
+redshift
+
+# ===== Sessão X11 / display manager =====
+sddm
+xorg-xinit
+xorg-xinput
+xorg-xset
+xss-lock
+picom
+feh
+lxrandr
+flameshot
+
+# ===== Arquivos e visualizadores =====
+thunar
+tumbler
+ffmpegthumbnailer
+filelight
+evince
+okular
+loupe
+
+# ===== Aplicativos =====
+firefox
+vlc
+gimp
+obs-studio
+gnome-multi-writer
+yt-dlp
+
+# ===== Desenvolvimento =====
+nodejs
+nvm
+python-pipx
+uv
+
+# ===== Fontes =====
+otf-commit-mono-nerd
+ttf-hack-nerd
+ttf-meslo-nerd
