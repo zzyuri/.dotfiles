@@ -29,6 +29,12 @@ cd "$DOTFILES"
 # extras
 echo ">> Configurações extras..."
 
+# instalar oh my zsh
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    echo ">> Instalando Oh My Zsh..."
+    RUNZSH=no CHSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
 sudo systemctl enable --now NetworkManager
 sudo systemctl enable --now bluetooth
 sudo systemctl enable sddm
@@ -41,5 +47,3 @@ sudo usermod -aG video "$USER"
 mkdir -p ~/Projects ~/Downloads
 
 echo ">> Pronto! Reinicie o computador."
-
-
