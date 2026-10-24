@@ -1,10 +1,6 @@
 return {
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-
-    { "rose-pine/neovim", name = "rose-pine", enabled = true },
 
     "xiyaowong/transparent.nvim",
-
 
     {
         "sphamba/smear-cursor.nvim",
@@ -15,6 +11,7 @@ return {
             stiffness = 0.8,
             trailing_stiffness = 0.5,
             distance_stop_animating = 0.5,
+
         },
         enabled = false,
     },
@@ -43,5 +40,6 @@ return {
 
     -- will be useful later
     -- "folke/trouble.nvim",
+    -- "laytan/cloak.nvim",
 
 }
